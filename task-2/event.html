@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Listeners</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Event Listeners</h1>
+        <p id="resize"></p>
+
+        <button id="myBtn" type="button">Get Date</button>
+        <p id="date"></p>
+
+        <button id="myBtn2" type="button">Click only once</button>
+
+        <p id="mouse">Mouse operations</p>
+
+        <div class="scroll-container" id="scroll-container">
+          In my younger and more vulnerable years my father gave me some advice
+          that I've been turning over in my mind ever since. <br /><br />
+          'Whenever you feel like criticizing anyone,' he told me, just remember
+          that all the people in this world haven't had the advantages that
+          you've had.'
+        </div>
+
+        <p>Scrolled <span id="scroll">0</span> times.</p>
+
+        <form id="myForm">
+          <label id="fname-label" for="fname">Enter your name:</label>
+          <input type="text" id="fname" placeholder="Your name" />
+
+          <input type="reset" />
+        </form>
+
+        <p>Select a new car from the list.</p>
+
+        <select id="carSelect" title="Select a car">
+          <option value="">Select</option>
+          <option value="Audi">Audi</option>
+          <option value="BMW">BMW</option>
+          <option value="Mercedes">Mercedes</option>
+        </select>
+
+        <div>
+          <img id="carImage" alt="car image" />
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="eventListeners.js"></script>
+</html>
