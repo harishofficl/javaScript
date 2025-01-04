@@ -1,153 +1,167 @@
 const elements = [
-    {
-        tag: "form",
-        class: "user-form",
-        style: {
-            marginTop: "20px",
-            display: "flex",
-            "flex-direction": "column",
-            width: "50%"
-        },
+  {
+    tag: "h2",
+    class: "form-heading",
+
+    style: {
+      margin: "20px auto auto auto",
+      width: "30%",
+      "text-align": "center"
+    },
+    attributes: {
+      id: "user-form-heading",
+    },
+    text: "FORM",
+  },
+  {
+    tag: "form",
+    class: "user-form",
+    style: {
+      margin: "20px auto auto auto",
+      display: "flex",
+      "flex-direction": "column",
+      width: "30%",
+    },
+    attributes: {
+      id: "user-form",
+    },
+    children: [
+      {
+        tag: "label",
+        text: "First Name:",
         attributes: {
-            id: "userForm",
+          for: "first-name",
+          id: "label-first-name",
+        },
+      },
+      {
+        tag: "input",
+        attributes: {
+          type: "text",
+          id: "first-name",
+          name: "first-name",
+        },
+      },
+      {
+        tag: "label",
+        text: "Last Name:",
+        attributes: {
+          for: "last-name",
+          id: "label-last-name",
+        },
+      },
+      {
+        tag: "input",
+        attributes: {
+          type: "text",
+          id: "last-name",
+          name: "last-name",
+        },
+      },
+      {
+        tag: "label",
+        text: "Age:",
+        attributes: {
+          for: "age",
+          id: "label-age",
+        },
+      },
+      {
+        tag: "input",
+        attributes: {
+          type: "number",
+          id: "age",
+          name: "age",
+        },
+      },
+      {
+        tag: "label",
+        text: "Gender:",
+        attributes: {
+          for: "gender",
+          id: "label-gender",
+        },
+      },
+      {
+        tag: "select",
+        attributes: {
+          id: "gender",
+          name: "gender",
         },
         children: [
-            {
-                tag: "label",
-                text: "First Name:",
-                attributes: {
-                    for: "first-name",
-                    id: "labelFname",
-                },
+          {
+            tag: "option",
+            text: "Male",
+            attributes: {
+              value: "male",
+              id: "option-male",
             },
-            {
-                tag: "input",
-                attributes: {
-                    type: "text",
-                    id: "fname",
-                    name: "fname",
-                },
+          },
+          {
+            tag: "option",
+            text: "Female",
+            attributes: {
+              value: "female",
+              id: "option-female",
             },
-            {
-                tag: "label",
-                text: "Last Name:",
-                attributes: {
-                    for: "lname",
-                    id: "labelLname",
-                },
+          },
+          {
+            tag: "option",
+            text: "Other",
+            attributes: {
+              value: "other",
+              id: "option-other",
             },
-            {
-                tag: "input",
-                attributes: {
-                    type: "text",
-                    id: "lname",
-                    name: "lname",
-                },
-            },
-            {
-                tag: "label",
-                text: "Age:",
-                attributes: {
-                    for: "age",
-                    id: "labelAge",
-                },
-            },
-            {
-                tag: "input",
-                attributes: {
-                    type: "number",
-                    id: "age",
-                    name: "age",
-                },
-            },
-            {
-                tag: "label",
-                text: "Gender:",
-                attributes: {
-                    for: "gender",
-                    id: "labelGender",
-                },
-            },
-            {
-                tag: "select",
-                attributes: {
-                    id: "gender",
-                    name: "gender",
-                },
-                children: [
-                    {
-                        tag: "option",
-                        text: "Male",
-                        attributes: {
-                            value: "male",
-                            id: "optionMale",
-                        },
-                    },
-                    {
-                        tag: "option",
-                        text: "Female",
-                        attributes: {
-                            value: "female",
-                            id: "optionFemale",
-                        },
-                    },
-                    {
-                        tag: "option",
-                        text: "Other",
-                        attributes: {
-                            value: "other",
-                            id: "optionOther",
-                        },
-                    },
-                ],
-            },
-            {
-                tag: "label",
-                text: "Languages:",
-                attributes: {
-                    for: "languages",
-                    id: "labelLanguages",
-                },
-            },
-            {
-                tag: "input",
-                attributes: {
-                    type: "text",
-                    id: "languages",
-                    name: "languages",
-                },
-            },
-            {
-                tag: "label",
-                text: "Comments:",
-                attributes: {
-                    for: "commentsBox",
-                    id: "labelCommentsBox",
-                },
-            },
-            {
-                tag: "textarea",
-                attributes: {
-                    id: "commentsBox",
-                    name: "commentsBox",
-                },
-                style: {
-                    gridColumn: "span 2",
-                },
-            },
-            {
-                tag: "button",
-                text: "Submit",
-                attributes: {
-                    type: "submit",
-                    id: "submitButton",
-                },
-                style: {
-                    gridColumn: "span 2",
-                },
-            },
+          },
         ],
-    },
+      },
+      {
+        tag: "label",
+        text: "Languages:",
+        attributes: {
+          for: "languages",
+          id: "label-languages",
+        },
+      },
+      {
+        tag: "input",
+        attributes: {
+          type: "text",
+          id: "languages",
+          name: "languages",
+        },
+      },
+      {
+        tag: "label",
+        text: "Comments:",
+        attributes: {
+          for: "comment-box",
+          id: "label-comment-box",
+        },
+      },
+      {
+        tag: "textarea",
+        attributes: {
+          id: "comment-box",
+          name: "comment-box",
+        },
+        style: {
+          gridColumn: "span 2",
+        },
+      },
+      {
+        tag: "button",
+        text: "Submit",
+        attributes: {
+          type: "submit",
+          id: "submit-button",
+        },
+        style: {
+          gridColumn: "span 2",
+        },
+      },
+    ],
+  },
 ];
 
 function htmlBuilder(elements, parentId) {
