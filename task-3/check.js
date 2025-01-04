@@ -1,4 +1,5 @@
 // 1st task: alpha + space(b/w text only) [ max_len: 20 ] restrict them to 20 characters, first-letter caps.
+
 const textBox = document.getElementById("task-1");
 textBox.addEventListener("keypress", validKeyPress);
 textBox.addEventListener("blur", capitalizeFirstLetter);
@@ -6,6 +7,7 @@ textBox.addEventListener("blur", capitalizeFirstLetter);
 function validKeyPress(event) {
   const charCode = event.keyCode;
   if (textBox.value.length >= 20) {
+    console.log("Maximum 20 characters.");
     event.preventDefault();
   }
   if (
@@ -97,12 +99,12 @@ textBox4.addEventListener("keypress", validKeyPress4);
 function validKeyPress4(event) {
   const charCode = event.keyCode;
 
-  if ( textBox4.value.length >= 20) {
+  if (textBox4.value.length >= 20) {
     event.preventDefault();
     return;
   }
 
-  if(textBox4.value.length === 0 && (charCode > 47 && charCode < 58)){
+  if (textBox4.value.length === 0 && charCode > 47 && charCode < 58) {
     event.preventDefault();
     return;
   }
