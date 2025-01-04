@@ -16,7 +16,7 @@ const elements = [
                 tag: "label",
                 text: "First Name:",
                 attributes: {
-                    for: "fname",
+                    for: "first-name",
                     id: "labelFname",
                 },
             },
@@ -150,7 +150,7 @@ const elements = [
     },
 ];
 
-function HTMLBuilder(elements, parentId) {
+function htmlBuilder(elements, parentId) {
   if (parentId === undefined) parentId = "body";
   elements.forEach((element) => {
     const tagObject = document.createElement(element.tag);
@@ -176,10 +176,10 @@ function HTMLBuilder(elements, parentId) {
           tagObject.setAttribute(attribute[0], attribute[1]);
         });
       } else if (entry[0] === "children") {
-        HTMLBuilder(element.children, element.attributes.id);
+        htmlBuilder(element.children, element.attributes.id);
       }
     });
   });
 }
 
-HTMLBuilder(elements, "body");
+htmlBuilder(elements, "body");
