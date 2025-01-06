@@ -2,7 +2,6 @@ const elements = [
   {
     tag: "h2",
     class: "form-heading",
-
     style: {
       margin: "20px auto auto auto",
       width: "30%",
@@ -117,36 +116,34 @@ const elements = [
       },
       {
         tag: "label",
-        text: "Languages:",
+        text: "Email:",
         attributes: {
-          for: "languages",
-          id: "label-languages",
+          for: "email",
+          id: "label-email",
         },
       },
       {
         tag: "input",
         attributes: {
-          type: "text",
-          id: "languages",
-          name: "languages",
+          type: "email",
+          id: "email-input",
+          name: "email",
         },
       },
       {
         tag: "label",
-        text: "Comments:",
+        text: "Phone Number:",
         attributes: {
-          for: "comment-box",
-          id: "label-comment-box",
+          for: "phone-number",
+          id: "label-phone-number",
         },
       },
       {
-        tag: "textarea",
+        tag: "input",
         attributes: {
-          id: "comment-box",
-          name: "comment-box",
-        },
-        style: {
-          gridColumn: "span 2",
+          type: "tel",
+          id: "phone-number",
+          name: "phone-number",
         },
       },
       {
