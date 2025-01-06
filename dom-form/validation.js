@@ -119,3 +119,12 @@ function validKeyPress4(event) {
     event.preventDefault();
   }
 }
+
+// prevent paste event
+const inputelements = document.querySelectorAll('input[type="text"]');
+ 
+inputelements.forEach(element => {
+    element.addEventListener("paste", (event) => {
+        event.preventDefault();
+    });
+});

@@ -2,11 +2,6 @@ const elements = [
   {
     tag: "h2",
     class: "form-heading",
-    style: {
-      margin: "20px auto auto auto",
-      width: "30%",
-      "text-align": "center"
-    },
     attributes: {
       id: "user-form-heading",
     },
@@ -15,147 +10,247 @@ const elements = [
   {
     tag: "form",
     class: "user-form",
-    style: {
-      margin: "20px auto auto auto",
-      display: "flex",
-      "flex-direction": "column",
-      width: "30%",
-    },
     attributes: {
       id: "user-form",
     },
     children: [
       {
-        tag: "label",
-        text: "First Name:",
+        tag: "div",
+        class: "div-main-row-1",
         attributes: {
-          for: "first-name",
-          id: "label-first-name",
-        },
-      },
-      {
-        tag: "input",
-        attributes: {
-          type: "text",
-          id: "first-name",
-          name: "first-name",
-        },
-      },
-      {
-        tag: "label",
-        text: "Last Name:",
-        attributes: {
-          for: "last-name",
-          id: "label-last-name",
-        },
-      },
-      {
-        tag: "input",
-        attributes: {
-          type: "text",
-          id: "last-name",
-          name: "last-name",
-        },
-      },
-      {
-        tag: "label",
-        text: "Age:",
-        attributes: {
-          for: "age",
-          id: "label-age",
-        },
-      },
-      {
-        tag: "input",
-        attributes: {
-          type: "number",
-          id: "age",
-          name: "age",
-        },
-      },
-      {
-        tag: "label",
-        text: "Gender:",
-        attributes: {
-          for: "gender",
-          id: "label-gender",
-        },
-      },
-      {
-        tag: "select",
-        attributes: {
-          id: "gender",
-          name: "gender",
+          id: "div-main-row-1",
         },
         children: [
           {
-            tag: "option",
-            text: "Male",
+            tag: "div",
+            class: "div-row-1",
             attributes: {
-              value: "male",
-              id: "option-male",
+              id: "div-row-1",
             },
+            children: [
+              {
+                tag: "div",
+                class: "first-name",
+                attributes: {
+                  id: "first-name-div",
+                },
+                children: [
+                  {
+                    tag: "label",
+                    text: "First Name:",
+                    attributes: {
+                      for: "first-name",
+                      id: "label-first-name",
+                    },
+                  },
+                  {
+                    tag: "input",
+                    attributes: {
+                      type: "text",
+                      id: "first-name",
+                      name: "first-name",
+                    },
+                  },
+                ],
+              },
+              {
+                tag: "div",
+                class: "last-name",
+                attributes: {
+                  id: "last-name-div",
+                },
+                children: [
+                  {
+                    tag: "label",
+                    text: "Last Name:",
+                    attributes: {
+                      for: "last-name",
+                      id: "label-last-name",
+                    },
+                  },
+                  {
+                    tag: "input",
+                    attributes: {
+                      type: "text",
+                      id: "last-name",
+                      name: "last-name",
+                    },
+                  },
+                ],
+              },
+            ],
           },
           {
-            tag: "option",
-            text: "Female",
+            tag: "div",
+            class: "div-row-2",
             attributes: {
-              value: "female",
-              id: "option-female",
+              id: "div-row-2",
             },
+            children: [
+              {
+                tag: "div",
+                class: "age",
+                attributes: {
+                  id: "age-div",
+                },
+                children: [
+                  {
+                    tag: "label",
+                    text: "Age:",
+                    attributes: {
+                      for: "age",
+                      id: "label-age",
+                    },
+                  },
+                  {
+                    tag: "input",
+                    attributes: {
+                      type: "number",
+                      id: "age",
+                      name: "age",
+                    },
+                  },
+                ],
+              },
+              {
+                tag: "div",
+                class: "gender",
+                attributes: {
+                  id: "gender-div",
+                },
+                children: [
+                  {
+                    tag: "label",
+                    text: "Gender:",
+                    attributes: {
+                      for: "gender",
+                      id: "label-gender",
+                    },
+                  },
+                  {
+                    tag: "select",
+                    attributes: {
+                      id: "gender",
+                      name: "gender",
+                    },
+                    children: [
+                      {
+                        tag: "option",
+                        text: "Male",
+                        attributes: {
+                          value: "male",
+                          id: "option-male",
+                        },
+                      },
+                      {
+                        tag: "option",
+                        text: "Female",
+                        attributes: {
+                          value: "female",
+                          id: "option-female",
+                        },
+                      },
+                      {
+                        tag: "option",
+                        text: "Other",
+                        attributes: {
+                          value: "other",
+                          id: "option-other",
+                        },
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
           },
           {
-            tag: "option",
-            text: "Other",
+            tag: "div",
+            class: "div-row-3",
             attributes: {
-              value: "other",
-              id: "option-other",
+              id: "div-row-3",
             },
+            children: [
+              {
+                tag: "div",
+                class: "email",
+                attributes: {
+                  id: "email-div",
+                },
+                children: [
+                  {
+                    tag: "label",
+                    text: "Email:",
+                    attributes: {
+                      for: "email",
+                      id: "label-email",
+                    },
+                  },
+                  {
+                    tag: "input",
+                    attributes: {
+                      type: "email",
+                      id: "email-input",
+                      name: "email",
+                    },
+                  },
+                ],
+              },
+              {
+                tag: "div",
+                class: "phone-number",
+                attributes: {
+                  id: "phone-number-div",
+                },
+                children: [
+                  {
+                    tag: "label",
+                    text: "Phone Number:",
+                    attributes: {
+                      for: "phone-number",
+                      id: "label-phone-number",
+                    },
+                  },
+                  {
+                    tag: "input",
+                    attributes: {
+                      type: "tel",
+                      id: "phone-number",
+                      name: "phone-number",
+                    },
+                  },
+                ],
+              },
+            ],
           },
         ],
       },
       {
-        tag: "label",
-        text: "Email:",
+        tag: "div",
+        class: "div-main-row-2",
         attributes: {
-          for: "email",
-          id: "label-email",
+          id: "div-main-row-2",
         },
-      },
-      {
-        tag: "input",
-        attributes: {
-          type: "email",
-          id: "email-input",
-          name: "email",
-        },
-      },
-      {
-        tag: "label",
-        text: "Phone Number:",
-        attributes: {
-          for: "phone-number",
-          id: "label-phone-number",
-        },
-      },
-      {
-        tag: "input",
-        attributes: {
-          type: "tel",
-          id: "phone-number",
-          name: "phone-number",
-        },
-      },
-      {
-        tag: "button",
-        text: "Submit",
-        attributes: {
-          type: "submit",
-          id: "submit-button",
-        },
-        style: {
-          gridColumn: "span 2",
-        },
+        children: [
+          {
+            tag: "div",
+            class: "submit-button-div",
+            attributes: {
+              id: "submit-button-div",
+            },
+            children: [
+              {
+                tag: "button",
+                text: "Submit",
+                class: "submit-button",
+                attributes: {
+                  type: "submit",
+                  id: "submit-button",
+                },
+              },
+            ],
+          },
+        ],
       },
     ],
   },
@@ -187,7 +282,7 @@ function htmlBuilder(elements, parentId) {
           tagObject.setAttribute(attribute[0], attribute[1]);
         });
       } else if (entry[0] === "children") {
-        htmlBuilder(element.children, element.attributes.id);
+        htmlBuilder(element.children, element.attributes?.id || parentId);
       }
     });
   });

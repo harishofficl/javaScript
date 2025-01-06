@@ -1,0 +1,31 @@
+.form-heading {
+  margin: 20px auto 20px auto;
+  width: 30%;
+  text-align: center;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 20px auto 20px auto;
+}
+
+.user-form > div {
+  display: flex;
+  flex-direction: column;
+}
+.user-form > div > div {
+    display: flex;
+    justify-content: space-evenly;
+}
+.user-form > div > div > div {
+    margin: 10px;
+    flex: 1;
+}
+.div-main-row-2 {
+    margin: 10px;
+}
+.submit-button {
+    padding: 10px 20px;
+}
