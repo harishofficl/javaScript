@@ -1,4 +1,4 @@
-// syntax: element.addEventListener(event, function*, useCapture);
+// syntax: element.addEventListener(event*, function*, useCapture);
 
 /*
 useCapture: 
@@ -121,4 +121,45 @@ formObj.addEventListener("reset", respondReset);
 function respondReset() {
   console.log("Reset complete");
 }
+//--------------------------------------------------------------------------
+
+// bubbling and capturing example
+const div1 = document.createElement("div");
+const div2 = document.createElement("div");
+const div3 = document.createElement("div");
+
+div1.id = "div1";
+div2.id = "div2";
+div3.id = "div3";
+
+div1.style.cssText = "width: 100px; height: 100px; background-color: red;";
+div2.style.cssText = "width: 100px; height: 100px; background-color: green;";
+div3.style.cssText = "width: 100px; height: 100px; background-color: blue;";
+
+document.body.appendChild(div1);
+document.body.appendChild(div2);
+document.body.appendChild(div3);
+
+div1.addEventListener("click", function () {
+  console.log("div1 clicked");
+});
+div2.addEventListener("click", function () {
+  console.log("div2 clicked");
+});
+div3.addEventListener("click", function () {
+  console.log("div3 clicked");
+});
+
+// bubbling
+document.body.addEventListener("click", function () {
+  console.log("body clicked");
+});
+// capturing
+document.body.addEventListener(
+  "click",
+  function () {
+    console.log("body clicked", true);
+  },
+  true
+);
 //--------------------------------------------------------------------------

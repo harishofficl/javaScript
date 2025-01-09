@@ -1,7 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+DE+VA+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
 .form-heading {
   margin: 20px auto 20px auto;
   width: 30%;
   text-align: center;
+  font-size: 30px;
+  color: #444;
 }
 
 .user-form {
@@ -9,23 +31,60 @@
   flex-direction: column;
   width: 50%;
   margin: 20px auto 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 .user-form > div {
   display: flex;
   flex-direction: column;
 }
+
 .user-form > div > div {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
+
 .user-form > div > div > div {
-    margin: 10px;
-    flex: 1;
+  margin: 10px;
+  flex: 1;
 }
+
+.user-form > div > div > div > label {
+  display: block;
+  padding-right: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
 .div-main-row-2 {
-    margin: 10px;
+  margin: 10px 0 0 0;
 }
+
+.user-form > div > div > div > input,
+.user-form > div > div > div > select,
+.user-form > div > div > div > button {
+  width: 95%;
+  padding: 6px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
 .submit-button {
-    padding: 10px 20px;
+  width: auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
 }

@@ -92,6 +92,7 @@ console.log("native: " + sum);
 //reduce
 const sum1 = arr2.reduce(myfunc);
 
+
 function myfunc(acc, item, index, numbers) {
   console.log(acc, item, index, numbers);
   return acc + item;
@@ -144,7 +145,7 @@ console.log("native: " + newArr1);
 //map
 
 const newArr2 = arr4.map((item) => {
-  item * 2;
+  return item * 2;
 });
 
 console.log("map(): ", newArr2);

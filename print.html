@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+      const countMap = new Map();
+      for (let i = 0; i < 1000000; i++) {
+        const decimalLength = Math.random().toString().slice(2).length;
+        if (countMap.get(decimalLength) === undefined) {
+          countMap.set(decimalLength, 1);
+        } else {
+          countMap.set(decimalLength, countMap.get(decimalLength) + 1);
+        }
+      }
+      console.log(countMap);
+
+    </script>
+
+    <!-- <script>
+      const promise1 = new Promise((resolve, reject) => {
+        setTimeout(() => resolve("Promise 1 resolved"), 1000);
+      });
+
+      const promise2 = new Promise((resolve, reject) => {
+        setTimeout(() => resolve("Promise 2 resolved"), 2000);
+      });
+
+      const promise3 = new Promise((resolve, reject) => {
+        setTimeout(() => resolve("Promise 3 resolved"), 3000);
+        setTimeout(() => reject("Promise 3 rejected"), 2999);
+      });
+
+      Promise.all([promise1, promise2, promise3])
+        .then((values) => {
+          console.log(values);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    </script> -->
+
+    <!-- <script>
+      one();
+      function one() {
+        console.log("one");
+
+        setTimeout(function () {
+          console.log("setOut-One");
+        }, 5000);
+
+        two();
+      }
+      function two() {
+        console.log("two");
+
+        setTimeout(function () {
+          console.log("setOut-Two");
+        }, 5000);
+
+        three();
+      }
+      function three() {
+        console.log("three");
+
+        setTimeout(function () {
+          console.log("setOut-three");
+        }, 5000);
+
+        console.log("three-2");
+        four();
+      }
+      function four() {
+        console.log("four");
+        (() => {
+          console.log("arrow");
+        })();
+      }
+    </script> -->
+  </body>
+</html>

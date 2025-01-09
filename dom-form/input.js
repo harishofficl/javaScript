@@ -37,7 +37,7 @@ const elements = [
                 children: [
                   {
                     tag: "label",
-                    text: "First Name:",
+                    text: "First Name:*",
                     attributes: {
                       for: "first-name",
                       id: "label-first-name",
@@ -62,7 +62,7 @@ const elements = [
                 children: [
                   {
                     tag: "label",
-                    text: "Last Name:",
+                    text: "Last Name:*",
                     attributes: {
                       for: "last-name",
                       id: "label-last-name",
@@ -137,6 +137,7 @@ const elements = [
                       {
                         tag: "option",
                         text: "Male",
+                        class: "option-male",
                         attributes: {
                           value: "male",
                           id: "option-male",
@@ -145,6 +146,7 @@ const elements = [
                       {
                         tag: "option",
                         text: "Female",
+                        class: "option-female",
                         attributes: {
                           value: "female",
                           id: "option-female",
@@ -153,6 +155,7 @@ const elements = [
                       {
                         tag: "option",
                         text: "Other",
+                        class: "option-other",
                         attributes: {
                           value: "other",
                           id: "option-other",
@@ -180,7 +183,7 @@ const elements = [
                 children: [
                   {
                     tag: "label",
-                    text: "Email:",
+                    text: "Email:*",
                     attributes: {
                       for: "email",
                       id: "label-email",
@@ -205,7 +208,7 @@ const elements = [
                 children: [
                   {
                     tag: "label",
-                    text: "Phone Number:",
+                    text: "Phone Number:*",
                     attributes: {
                       for: "phone-number",
                       id: "label-phone-number",
