@@ -29,7 +29,7 @@ function calculateTotalAndAverage() {
 }
 
 function notifySubscribers() {
-  dataStore.subscribers.forEach((subscriber) => subscriber());
+  dataStore.subscribers.forEach((callBack) => callBack());
 }
 
 function subscribe(subscriber) {

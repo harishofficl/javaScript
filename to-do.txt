@@ -1,2 +1,4 @@
 html 5 routing
 modules
+
+module loads, then subscribe dataStore and when next module loads unsubscribe it.
