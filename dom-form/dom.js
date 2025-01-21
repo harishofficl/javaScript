@@ -91,4 +91,4 @@ function HTMLBuilder(elements, parentId) {
   });
 }
 
-HTMLBuilder(elements,"body");
+HTMLBuilder(elements);

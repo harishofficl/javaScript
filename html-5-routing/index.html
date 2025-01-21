@@ -6,6 +6,36 @@
     <title>HTML 5 - Routing</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
-  <script src="script.js" type="module"></script>
+  <body>
+    <div id="app"></div>
+    <div id="content-container"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const app = document.getElementById('app');
+
+        const nav = document.createElement('nav');
+        const ul = document.createElement('ul');
+
+        const links = [
+          { href: 'home.html', text: 'Home' },
+          { href: 'news.html', text: 'News' },
+          { href: 'cricket.html', text: 'Cricket' },
+          { href: 'module.js', text: 'Module' }
+        ];
+
+        links.forEach(link => {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = link.href;
+          a.textContent = link.text;
+          li.appendChild(a);
+          ul.appendChild(li);
+        });
+
+        nav.appendChild(ul);
+        app.appendChild(nav);
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>

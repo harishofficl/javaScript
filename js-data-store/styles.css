@@ -45,3 +45,7 @@ button:hover {
 .result-item {
     margin: 5px 0;
 }
+
+.label-total, .label-average {
+    padding: 10px;
+}

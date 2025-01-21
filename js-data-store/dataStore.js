@@ -16,7 +16,6 @@ function updateSubject(subject, marks) {
     dataStore.subjects[subject] = marks;
     calculateTotalAndAverage();
     notifySubscribers();
-    console.log(dataStore);
   } else {
     console.error(`Subject ${subject} does not exist in the data store.`);
   }

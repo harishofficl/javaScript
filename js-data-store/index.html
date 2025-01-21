@@ -7,45 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Subject Marks Input</h1>
-        <form id="marks-form">
-            <label for="english">English:</label>
-            <input type="number" id="english" placeholder="Enter marks" />
-
-            <label for="tamil">Tamil:</label>
-            <input type="number" id="tamil" placeholder="Enter marks" />
-
-            <label for="maths">Maths:</label>
-            <input type="number" id="maths" placeholder="Enter marks" />
-
-            <label for="computer-science">Computer Science:</label>
-            <input type="number" id="computer-science" placeholder="Enter marks" />
-
-            <label for="physics">Physics:</label>
-            <input type="number" id="physics" placeholder="Enter marks" />
-
-            <!-- <button type="submit" id="submit-button">Submit</button> -->
-        </form>
-
-        <div class="results">
-            <h2>Results</h2>
-            <p>Total: <span id="total-value">0</span></p>
-            <p>Average: <span id="average-value">0</span></p>
-        </div>
-
-        <div class="subscription">
-            <h2>Subscribe to Updates</h2>
-            <label>
-                <input type="checkbox" id="subscribe-total" checked />
-                Total
-            </label>
-            <label>
-                <input type="checkbox" id="subscribe-average" checked />
-                Average
-            </label>
-        </div>
-    </div>
+    <script src="input-module.js" type="module"></script>
     <script src="dataStore.js" type="module"></script>
     <script src="app.js" type="module"></script>
 </body>
