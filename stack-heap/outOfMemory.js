@@ -1,14 +1,8 @@
-// heap out of memory example
-
-const list = [];
-for (let i = 0; i < 1000000000000000; i++) {
-  list.push(i);
+const arr = [];
+try {
+  while (true) {
+    arr.push(new Array(1000000));
+  }
+} catch (error) {
+  console.error("Heap memory error occurred:", error);
 }
-
-// stack overflow example
-
-// function foo() {
-//   foo();
-// }
-
-// foo(); // Uncaught RangeError: Maximum call stack size exceeded

@@ -3,12 +3,22 @@ modules [✔️]
 
 module loads, then subscribe dataStore and when next module loads unsubscribe it. [✔️]
 
---------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 
 web worker - communicate b/w tabs [❌]
 
---------------------------------------------------✔️---❌---------------------------------------------------------------
+--------------------------------------------------✔️---❌---------------------------------------------
 23.01.2025:
 install typeScript [✔️]
-execute a ts after converting to js []
-typeScript - dataTypes []
+execute a ts after converting to js [✔️]
+typeScript - dataTypes [✔️]
+--------------------------------------------------✔️---❌---------------------------------------------
+24.01.2025
+angular building blocks
+routing
+lazy loading modules
+--------------------------------------------------✔️---❌---------------------------------------------
+27.01.2025
+custom directories - angular
+materialized error when stack out of memory (conceptual)
+creating service

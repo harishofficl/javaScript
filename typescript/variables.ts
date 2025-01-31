@@ -37,10 +37,10 @@ console.log(employee);
 console.log("-----------------------------------------------------------");
 // 3. Union (T | U)
 
-let numberString: string | number = "One";
+let numberString: string | Boolean = "One";
 console.log(numberString);
 
-numberString = 1;
+numberString = false;
 console.log(numberString);
 
 console.log("-----------------------------------------------------------");
